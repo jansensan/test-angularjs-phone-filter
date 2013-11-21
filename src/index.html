@@ -12,9 +12,10 @@
 
     <div ng-app="page">
       <div ng-controller="pageController">
-        <input ng-model="phone" type="tel" pattern="[0-9]{10}" >
-        <p>Unformatted phone number: {{phone}}</p>
-        <p>Formatted phone number: {{phone|northAmericanPhoneNumber}}</p>
+        <form novalidate name="someForm">
+          <input name="phone" ng-model="phone" type="tel" ng-pattern="/0-9/" required />
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     </div>
 

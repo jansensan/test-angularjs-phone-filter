@@ -25,4 +25,7 @@ angular.module('page', [])
 
 .controller('pageController', function ($scope) {
   $scope.phone = '';
+
+  // $scope.someForm.phone
+
 })
