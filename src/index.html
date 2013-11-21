@@ -12,7 +12,9 @@
 
     <div ng-app="page">
       <div ng-controller="pageController">
-
+        <input ng-model="phone" type="phone">
+        <p>Unformatted phone number: {{phone}}</p>
+        <p>Formatted phone number: {{phone|northAmericanPhoneNumber}}</p>
       </div>
     </div>
 
